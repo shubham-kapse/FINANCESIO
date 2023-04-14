@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Financesio | Sign Up</title>
+	<link rel="icon" type="image/x-icon" href="/static/images/Favicon2.png">
+	<link rel="stylesheet" type="text/css" href="..\static\css\signup1.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body >
+	<!-- <img class="wave" src="..\static\images\wave.png"> -->
+	<div class="container">
+		
+		<div class="img">
+			<div id="png"><a href="/" title="HOME"><img style="width:75px; height:75px ; " src="..\static\images\home-page.png"></a></div>
+			<img src="..\static\images\bg.svg">
+		</div>
+		
+		
+		<div class="login-content">
+			
+			<form action='/login' id="signupForm" method="POST">
+				<div class="alert">Signup Successful</div>
+				<!-- <div class="msg">{{ msg }}</div> -->
+				<img src="..\static\images\Favicon2.png">
+				<!-- <h2 class="title">Welcome</h2> -->
+				<h3 class="title">Hello, Glad to see you</h3>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" id="username" class="input" required>
+           		   </div>
+           		</div>
+
+                   <div class="input-div two">
+                    <div class="i">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="div">
+                            <h5>Email</h5>
+                            <input type="email" id="email" class="input" required>
+                    </div>
+                 </div>
+
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" id="password" class="input" required>
+            	   </div>
+            	</div>
+
+                <div class="trems">
+                    <input class="check" type="checkbox" required/>
+                 <p class="conditions">I read and agree to <a href="#">Trems &amp; Conditions</a></p>
+                 </div>
+            	<!-- <input type="submit" class="btn" value="Register"> -->
+				<button class="btn" onclick="window.location.href = 'add.html';">Register</button>
+				<span>OR</span>
+				
+				<div><b>Sign-up with</b></div>
+				<div class="signin_option justify-center">
+					<ul class="justify-center">
+						<!-- <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li> -->
+						<li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fab fa-google" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+						<!-- <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li> -->
+					</ul>
+					
+				</div> 
+				<div class="app" ><b>Already have an account?</b><a id="app1" href="login.html">Login here</a></div>
+            </form>
+			</div>
+    </div>
+ <script type="text/javascript" src="..\static\js\login.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+ <script src="..\static\js\signup1.js"></script>
+</body>
+</html>
