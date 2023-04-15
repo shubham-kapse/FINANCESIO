@@ -27,7 +27,7 @@ function auth(){
 	} 
 
 	else{
-		alert("Invalif info");
+		alert("Invalid info");
 		return;
 	}
 }
