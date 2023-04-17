@@ -76,7 +76,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-          <img src="/static/images/Favicon2.png" alt="Logo">
+          <img src="../static/images/Favicon2.png" alt="Logo">
             <h3>Edit Expense</h3>
             <form action="/update/{{expenses[0]}}" method="POST">
 
@@ -99,7 +99,7 @@
 
 
                 <div class="form-group"> <label for="">Expense name</label> 
-                    <input class="form-control" type="text" name="expensename" value="{{expenses[3]}}" id="expensename">
+                    <input class="form-control" type="text" name="expensename" value="" id="expensename">
                 </div>
                 <div class="form-group">
                      <label for="">Expense Amount</label> 
@@ -109,7 +109,8 @@
                 <div class="form-group">
                     <label for=""></label> 
                     <select class="form-control" name="paymode" value="{{expenses[5]}}"  id="paymode">
-                        <option selected hidden>{{expenses[5]}}</option>
+                        <!-- <option selected hidden>{{expenses[5]}}</option> -->
+                        <option selected hidden></option>
                         <option value="cash">cash</option>
                         <option value="debitcard">debitcard</option>
                         <option value="creditcard">creditcard</option>
@@ -122,7 +123,7 @@
                     <label for=""></label>
                     <select class="form-control" name="category" value="{{expenses[6]}}"  id="category">
 
-                         <option  selected hidden>{{expenses[6]}}</option>
+                         <option  selected hidden></option>
                         <option value="food">food</option>
                         <option value="entertainment">Entertainment</option>
                         <option value="business ">Business</option>
