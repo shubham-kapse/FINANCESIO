@@ -195,46 +195,46 @@
        <div class="col-md-6">
         <canvas id="myChart" width="400" height="400"></canvas>
         
-        <script>
+        <script src="../static/js/retrieve.js">
           
-            let food = document.getElementById('tfood').innerHTML
-            let entertainment = document.getElementById('tentertainment').innerHTML
-            let business = document.getElementById('tbusiness').innerHTML
-            let rent = document.getElementById('trent').innerHTML
-            let emi = document.getElementById('temi').innerHTML
-            let other = document.getElementById('tother').innerHTML
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ['Food', 'Entertainment', 'Business', 'Rent', 'EMI', 'Other'],
-                datasets: [{
-                    label: 'Expenses Chart',
-                    data: [food, entertainment, business, rent, emi, other],
-                    backgroundColor: [
-                    'rgb(255, 99, 132)',
-                    'rgb(0, 0, 0)',
-                    'rgb(255, 205, 86)',
-                    'rgb(201, 203, 207)',
-                       'rgb(54, 162, 235)',
-                        'rgb(215, 159, 64)'
-                    ],
+    //         let food = document.getElementById('tfood').innerHTML
+    //         let entertainment = document.getElementById('tentertainment').innerHTML
+    //         let business = document.getElementById('tbusiness').innerHTML
+    //         let rent = document.getElementById('trent').innerHTML
+    //         let emi = document.getElementById('temi').innerHTML
+    //         let other = document.getElementById('tother').innerHTML
+    //     var ctx = document.getElementById('myChart').getContext('2d');
+    //     var myChart = new Chart(ctx, {
+    //         type: 'doughnut',
+    //         data: {
+    //             labels: ['Food', 'Entertainment', 'Business', 'Rent', 'EMI', 'Other'],
+    //             datasets: [{
+    //                 label: 'Expenses Chart',
+    //                 data: [food, entertainment, business, rent, emi, other],
+    //                 backgroundColor: [
+    //                 'rgb(255, 99, 132)',
+    //                 'rgb(0, 0, 0)',
+    //                 'rgb(255, 205, 86)',
+    //                 'rgb(201, 203, 207)',
+    //                    'rgb(54, 162, 235)',
+    //                     'rgb(215, 159, 64)'
+    //                 ],
                    
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-      legend: {
-        position: 'bottom',
-      },
-      title: {
-        display: true,
-        text: 'EXPENSE BREAKDOWN'
-      }
-    }
-            }
-        });
+    //             }]
+    //         },
+    //         options: {
+    //             responsive: true,
+    //             plugins: {
+    //   legend: {
+    //     position: 'bottom',
+    //   },
+    //   title: {
+    //     display: true,
+    //     text: 'EXPENSE BREAKDOWN'
+    //   }
+    // }
+    //         }
+    //     });
 
 
         </script>
